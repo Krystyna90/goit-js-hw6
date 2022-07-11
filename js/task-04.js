@@ -1,9 +1,9 @@
 const divEl = document.querySelector('#counter');
-const btnDecrement = divEl.children[0];
-const valueEl = divEl.children[1];
-const btnIncrement = divEl.children[2];
+const btnDecrement = document.querySelector('[data-action = "decrement"]');
+const valueEl = document.querySelector('#value');
+const btnIncrement = document.querySelector('[data-action = "increment"]');
 
-let counterValue = Number(valueEl.textContent);
+let counterValue = 0;
 
 btnIncrement.addEventListener('click', handleIncrementButtonClick);
 

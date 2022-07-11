@@ -11,7 +11,9 @@ function onFormSubmit(event) {
     const formEl = event.currentTarget.elements;
     const email = formEl.email.value;
     const password = formEl.password.value;
-    if (email === '' || password === '') alert('FullFill all inputs, please');
+    if (email === '' || password === '') {
+        alert('FullFill all inputs, please');
+    }
     else {
     const formData = { email, password };
         console.log(formData); 
