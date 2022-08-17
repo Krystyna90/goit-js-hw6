@@ -16,3 +16,5 @@ btnDecrement.addEventListener('click', handleDecrementButtonClick);
 function handleDecrementButtonClick(event) {
     valueEl.textContent = counterValue -= 1;
 }
+const maxNumber = Number.NEGATIVE_INFINITY;
+console.log(maxNumber);
